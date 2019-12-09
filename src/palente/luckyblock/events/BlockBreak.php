@@ -54,7 +54,7 @@ class BlockBreak implements Listener {
         $type = array_keys($loot)[0];
 
         switch($type){
-            case "items":
+         /*   case "items":
                 $items = array();
 
                 foreach($loot["items"] as $item){
@@ -95,7 +95,7 @@ class BlockBreak implements Listener {
                 
                 Main::getInstance()->getScheduler()->scheduleDelayedTask(new SetBlock($block->getLevel(), $block->asVector3(), $blockInstance), 1);
             break;
-
+*/
             case "commands-player":
                 foreach($loot["commands-player"] as $cmd){
                     $cmd = str_replace("{playerName}", $player->getName(), $cmd);
@@ -105,7 +105,7 @@ class BlockBreak implements Listener {
                 }
             break;
 
-            case "commands-server":
+     /*       case "commands-server":
                 foreach($loot["commands-server"] as $cmd){
                     $cmd = str_replace("{playerName}", $player->getName(), $cmd);
 
@@ -113,7 +113,7 @@ class BlockBreak implements Listener {
                     Main::getInstance()->getServer()->dispatchCommand(new ConsoleCommandSender(), $cmd);
                 }
             break;
-
+*/
             case "money":
                 if(isset(Main::getInstance()->economyPlugin)){
                     $moneyCount = $loot["money"];
