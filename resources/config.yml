@@ -20,10 +20,7 @@ loot:
     # - items: ["id:meta-count", "id-count", "id"]
     # - items: ["id-count-itemName"]
     # - items: ["id-count-DEFAULT-enchantName-enchantLevel"]
-  - items: ["276-1-DEFAULT-sharpness-5"]
-  - items: ["310", "311", "312", "313"]
-  - items: ["322-32"]
-  - items: ["278-1-Pickaxe of {playerName}"]
+  - items: []
   # blocks -> replace the LuckyBlock by another block, examples:
     # - block: "id:meta"
   - block: 57
@@ -33,17 +30,21 @@ loot:
   # commands-player -> execute commands from the player, examples:
     # - commands-player: [me "Bluzzi is too strong..."]
     # - commands-player: ["help 1", "help 2"]
-  - commands-player: ["help 1", "help 2"]
-  - commands-player: ["me I broke a LuckyBlock !!"]
+  - commands-player: ["givetoken '{playerName}' 25"]
+  - commands-player: ["givetoken '{playerName}' 50"]
+  - commands-player: ["givetoken '{playerName}' 75"]
+  - commands-player: ["givetoken '{playerName}' 100"]
   # commands-server -> execute commands from the server, examples:
     # - commands-server: ["say {playerName} broke a LuckyBlock."]
-  - commands-server: ["say {playerName} broke a LuckyBlock."]
-  - commands-server: ["effect {playerName} jump 60 2", "effect {playerName} speed 60 2"]
+  - commands-server: []
   # money -> give money to a player (be careful, this feature requires the activation of the EconomyAPI plugin), examples:
     # - money: count
-  - money: 5000
-  - money: 250
-  - money: 1000
+  - money: 10000
+  - money: 15000
+  - money: 20000
+  - money: 25000
+  - money: 30000
+  - money: 35000
 
 # Plugin's version, please don't touch it !
 version: "1.1"
